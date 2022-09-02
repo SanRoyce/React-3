@@ -1,15 +1,32 @@
 export const db = [ {
   id: "1",
-  nombre: "Colaborador 1",
-  correo: "colaborador1@colaborador1.com"
-}, {
+  nombre: "Fernando",
+  correo: "fernando@gmail.com",
+}, 
+{
 id: "2",
-nombre: "Colaborador 2",
-correo: "colaborador2@colaborador2.com"
+nombre: "Daniel",
+correo: "daniel@gmail.com",
 }, 
 {
 id: "3",
-nombre: "Colaborador 3",
-correo: "colaborador3@colaborador3.com"
+nombre: "Consuelo",
+correo: "consuelo@gmail.com",
+},
+{
+id: "4",
+nombre: "Andres",
+correo: "andres@gmail.com",
+},
+{
+  id: "5",
+  nombre: "Cristian",
+  correo: "cristian@gmail.com",
+},
+{
+  id: "6",
+  nombre: "Enzo",
+  correo: "enzo@gmail.com",
 }
 ];
+

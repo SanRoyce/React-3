@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { createContext, useState } from "react";
 import DataProvider from "./context/DataContext";
 import InputB from "./components/InputB";
 import InputF from "./components/InputF";
@@ -7,10 +7,10 @@ import "./App.css";
 
 function App() {
   return (
-    <DataProvider>
-      
+    <DataProvider >
+      <InputB/>
       <InputF/>
-      
+      <Table/> 
     </DataProvider>
   );
 }

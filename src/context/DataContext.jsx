@@ -1,12 +1,22 @@
 import { createContext, useState } from "react";
-export const DataContext = createContext();
 import React from "react";
 import {db} from "../data/db";
+export const DataContext = createContext('');
 
 const DataProvider = ({children}) =>{
     const [data, setData] = useState(db);
+    const [nombre, setNombre] = useState("");
+    const [correo, setCorreo] = useState("");
+    const [buscar, setBuscar] = useState(""); 
+    const [lista, setLista] = useState(data);
     return(
-        <DataContext.Provider>
+        <DataContext.Provider value={{
+            data, setData,
+            nombre, setNombre,
+            correo, setCorreo,
+            buscar, setBuscar,
+            lista, setLista,
+        }}>
             {children}
         </DataContext.Provider>
     );
