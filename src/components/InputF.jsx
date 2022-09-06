@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useState, useContext } from 'react'
+/* importar datacontext */
+import { DataContext } from '../context/DataContext';
+
 import { db } from '../data/db';
 
 
 const inputF = () => {
-
+  
     const submit = (e) => {
         e.preventDefault()
         console.log('Enviando formulario')
@@ -11,7 +14,7 @@ const inputF = () => {
     const informacionAgregadaInput = (e) => {
       console.log(e.target.value)
     };
-  return (
+      return (
     <div className='border mt-5 mb-10'>
       <h1 className="bg-teal-500 text-white"> <strong>Formulario</strong></h1>
     <form onSubmit={submit}>
